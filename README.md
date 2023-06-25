@@ -26,7 +26,21 @@
 
 **Sparkpost Setup**
 
+![Screenshot](sparkpost1.png)
+
+![Screenshot](sparkpost2.png)
+
 **Received Emails**
+
+![Screenshot](email1.png)
+
+![Screenshot](email2.png)
+
+![Screenshot](email3.png)
+
+![Screenshot](email4.png)
+
+![Screenshot](email5.png)
 
 
 **JumpCloud LDAP Configuration**
