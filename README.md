@@ -9,11 +9,10 @@
 
 
 ### Steps I took to configure:
-- I decided to setup Bitwarden utilizing the Digital Ocean Droplet, which was extremely easy to set up. I opted to generate an SSL certificate through Lets Encrypt (which I have used before).
-- After getting Bitwarden fully installed and started up, I set up a DNS record, creating a subdomain as part of a domain I already own, and directed my newly created Bitwarden instance to it: https://bitwarden.stacygrimes.com
-- I then created a Sparkpost account (I have used Sparkpost before so I was already familiar with it) and set up and verified bitwarden.stacygrimes.com as the Sending domain and bounce.stacygrimes.com as the Bounce domain.  I then generated a Sparkpost API key and used the provided SMTP configuration to configure the SMTP relay within ./bwdata/env/global.override.env
-- Though the emails were being sending through the mail server, it took awhile for them to successfully go through because I had to wait for the domain to become fully verified
-- I created a test account using the email stacykgrimes+test@gmail.com, and once it the domain was finally fully verified I was able to receive emails for account creation, email verification, and Admin login.
+- I decided to install Bitwarden utilizing the [Digital Ocean Droplet](https://bitwarden.com/blog/digitalocean-marketplace/), which was extremely easy to set up. I opted to generate an SSL certificate through Lets Encrypt (which I have used before).
+- After getting Bitwarden fully installed and started up, I set up a DNS record, creating a subdomain as part of a domain I already own, and directed my newly created self hosted Bitwarden instance to it: https://bitwarden.stacygrimes.com
+- I then created a Sparkpost account (I have used Sparkpost before so I was already familiar with it) and set up and verified **bitwarden.stacygrimes.com** as the Sending domain and **bounce.stacygrimes.com** as the Bounce domain.  I then generated a Sparkpost API key and used the provided SMTP configuration to setup the SMTP relay by editing **./bwdata/env/global.override.env**
+- I created a test account with my self hosted instance, and Sparkpost event logs showed successful Injection of messages, but the first few tries failed due ["Unconfigured Sending Domain"](https://support.sparkpost.com/docs/user-guide/unconfigured-sending-domain) because the domain verification had not yet been fully validated. Once the domain was finally fully verified I was able to receive emails for account creation, email verification, and Admin login.
 - I added the email address associated with Bitwarden Cloud account (stacykgrimes@gmail.com) to the admin configuration in ./bwdata/env/global.override.env and then was able to the Admin console via https://bitwarden.stacygrimes.com/admin
 - I then was able to upload the organization License (which I had downloaded form my cloud account) to link my existing organization (PhilaPhotomat) to my self hosted instance. 
 - Hurrah!!!
@@ -22,5 +21,15 @@
 - I created a JumpCloud Free account, and created a User directory and added three users: stacykgrimes+test@gmail.com, stacykgrimes+admin.com, stacykgrimes@gmail.com
 - I then followed these [very helpful instructions](https://contributing.bitwarden.com/getting-started/enterprise/directory-connector/jumpcloud/) from the Bitwarden Contributing Docs to configure the Bitwarden Directory Connector specifically for JumpCloud LDAP.
 - It took a few tries for me to get everything configured just right, but the test succeeded and I was able to succesfully sync the users to my organization.
+  
+### Supporting Evidence
 
--  
+![alt text](image.jpg)
+
+![alt text](image.jpg)
+
+![alt text](image.jpg)
+
+![alt text](image.jpg)
+
+
