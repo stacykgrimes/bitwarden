@@ -24,12 +24,19 @@
   
 ### Supporting Evidence
 
-![alt text](image.jpg)
+**Sparkpost Setup**
 
-![alt text](image.jpg)
+**Received Emails**
 
-![alt text](image.jpg)
 
-![alt text](image.jpg)
+**JumpCloud LDAP Configuration**
+
+![Screenshot of Directory Connector Configuration](evidence1.png)
+
+![Screenshot](evidence2.png)
+
+![Screenshot](evidence3.png)
+
+![Screenshot](evidence4.png)
 
 
